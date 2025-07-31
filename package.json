@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "react-helmet-async": "^2.0.4",
+    "react-router-sitemap-maker": "^1.1.0",
+    "recharts": "^2.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}

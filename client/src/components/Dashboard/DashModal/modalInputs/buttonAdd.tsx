@@ -1,0 +1,35 @@
+import { useContext } from "react";
+import {
+  dateEndContext,
+  dateStartContext,
+  taskDescriptionContext,
+  taskNameContext,
+} from "../modal";
+
+export default function ButtonAdd(props: {
+  addNewTask: (
+    taskName: string,
+    taskDescryption: string,
+    dateStart: string,
+    dateEnd: string
+  ) => void;
+  setIsAlert: React.Dispatch<React.SetStateAction<boolean>>
+}) {
+  const { addNewTask, setIsAlert } = props;
+  const taskName = useContext(taskNameContext);
+  const taskDescription = useContext(taskDescriptionContext);
+  const dateStart = useContext(dateStartContext);
+  const dateEnd = useContext(dateEndContext);
+  return (
+    <button
+      onClick={(e) => {
+        e.preventDefault();
+        addNewTask(taskName, taskDescription, dateStart, dateEnd);
+        setIsAlert(true)
+      }}
+      className="transition duration-700 ease-in-out bg-secondary text-white font-semibold  pt-3 pb-3 rounded-lg w-modalInputs hover:bg-opacity-30 mobile1:w-11/12"
+    >
+      Save
+    </button>
+  );
+}
