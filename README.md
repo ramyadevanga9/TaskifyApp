@@ -19,12 +19,18 @@ Taskify is a sleek and simple task management web application that helps users c
 ---
 
 ## 📸 Screenshots
+##lightmode
 
-*(Add screenshots here if available)*
+## 🚀 <img width="1872" height="1743" alt="lightmode" src="https://github.com/user-attachments/assets/031719f2-0de4-43b0-a193-4b4291607358" />
 
----
 
-## 🚀 Tech Stack
+##darkmode
+
+
+<img width="1860" height="2118" alt="darkmode" src="https://github.com/user-attachments/assets/24f70735-5493-438a-9aef-d28cbb4a5074" />
+
+-----
+Tech Stack
 
 * **Frontend**: React.js, JavaScript, HTML5, CSS3
 * **Icons**: React Icons
@@ -41,54 +47,5 @@ Taskify is a sleek and simple task management web application that helps users c
 * UI/UX design using minimal CSS
 * Clean, maintainable code practices
 
----
-
-## 📂 Folder Structure
-
-```
-TaskifyApp/
-├── public/
-├── src/
-│   ├── components/
-│   ├── App.js
-│   ├── index.js
-│   └── styles/
-├── package.json
-└── README.md
-```
 
 ---
-
-## 🧠 Future Improvements
-
-* Add task categories and filters
-* Integrate localStorage for persistent data
-* Drag-and-drop task reordering
-* Add due dates and reminders
-
----
-
-## ✅ How to Run Locally
-
-```bash
-git clone https://github.com/your-username/TaskifyApp
-cd TaskifyApp
-npm install
-npm start
-```
-
----
-
-## 🤝 Acknowledgements
-
-Inspired by task management apps like Todoist and Trello. Modified and personalized for frontend learning.
-
----
-
-Let me know if you want to add:
-
-* Your name
-* Screenshot links
-* Deployment (so you can add “Live Demo”)
-
-Ready to paste into GitHub!
