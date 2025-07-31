@@ -1,121 +1,167 @@
-<h1>Taskfiy - Inteligent task planner </h1>
+Here’s your **GitHub-ready `README.md`** — formatted cleanly with markdown syntax, so you can **copy-paste directly into your GitHub repo**:
 
 ---
 
-<h2>LIVE:</h2>
+````markdown
+# TaskifyApp – Intelligent Task Planner
 
-- https://taskify-work-planner.vercel.app/
+TaskifyApp is a full-stack task management application that helps users plan, track, and visualize task progress over time using an intuitive dashboard and date-driven analytics.
 
----
-
-# ABOUT PROJECT :bulb: :
-
-- <h3>:hammer: Why did we build this project ?</h3> Our motivation we found in the problem while planing our tasks. We needed something that would plan and calculate stages of our tasks for us.
-- <h3>:technologist: How we found the solution ? </h3> So, we thought that is possible create a function which based on chooised by user <strong> start date</strong> and <strong> end date</strong> with help <strong> current date</strong>, will be calculate all needed informations and show data on charts. To sum up, the most important thing in all this are calculations based on <strong>3 dates</strong> and after all calculations our application show user his <strong> progress, finished days, future days and how much he must to do </strong> in chooised task.
+**🔗 Live Demo:**  
+[https://taskify-work-planner.vercel.app](https://taskify-work-planner.vercel.app)
 
 ---
 
-### :raising_hand_man:
+## 🔍 Overview
 
-| AUTORS                                                     | FRONTEND                              | BACKEND                               |
-|:----------------------------------------------------------:|:-------------------------------------:|:-------------------------------------:|
-| **GabrielJuniorDev** ([Gabrli](https://github.com/Gabrli)) | ![100%](https://progress-bar.dev/100) | ![0%](https://progress-bar.dev/0)     |
-| **gental-py** ([gental-py](https://github.com/gental-py/)) | ![0%](https://progress-bar.dev/0)     | ![100%](https://progress-bar.dev/100) |
+TaskifyApp allows users to create tasks with a start date and end date, then intelligently calculates progress using the current date.  
+It visualizes:
 
----
+- Completed vs. pending days  
+- Task progress percentage  
+- Future workload distribution  
+- Folder-based task grouping  
 
-## :hammer_and_wrench: Tech stack
-
-<h1>Frontend</h1>
-
-- <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="20" height="20"/>&nbsp; React + Vite
-- <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="20" height="20"/>&nbsp; TypeScript
-- <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg"  title="CSS3" alt="CSS" width="20" height="20"/>&nbsp; Tailwindcss
-- <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg"  title="HTML" alt="HTML5" width="20" height="20"/>&nbsp; HTML5
-
-<h1>Backend</h1>
-
-- <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg"  title="Python3" alt="Python3" width="20" height="20"/>&nbsp; Python3
-- <img src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original-wordmark.svg"  title="FastAPI" alt="FastAPI" width="20" height="20"/>&nbsp; FastAPI
+All insights are presented through responsive charts in a modern UI.
 
 ---
 
-### Other tools
+## ✨ Features
 
-- <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain-wordmark.svg"  title="GIT" alt="GIT" width="20" height="20"/>  Git - version control system
-
----
-
-<h2>SCREENS:</h2>
-<h3>1.Landing page: </h3>
-- Dark mode: 
-<img src="https://github.com/Gabrli/Taskify/assets/110058841/030b5434-2656-4214-8fdc-e40a8c4c2e90"/>
-
-- Light mode:
-  
-  <img src="https://github.com/Gabrli/Taskify/assets/110058841/fe667f16-3698-4486-a772-eb673f67c4d8"/>
-
-<h3>2.Dashboard:</h3>
-- Dark mode:
-<img src="https://github.com/Gabrli/Taskify/assets/110058841/5dcce7b0-5bd4-42d8-a649-566996649ad3"/>
-
-- With Notifications:
-  
-  <img src="https://github.com/Gabrli/Taskify/assets/110058841/9f81a1d5-6ec0-42a6-b923-6ea9d2d46fed"/>
+- Create, edit, and delete tasks  
+- Track task progress based on date intervals  
+- Organize tasks using color-coded folders  
+- Dark mode / Light mode support  
+- Chart-based visual analytics  
+- Authentication with backend APIs  
 
 ---
 
-### API Server
+## 💻 Tech Stack
 
-##### Response:
+### Frontend
+- React + Vite  
+- TypeScript  
+- Tailwind CSS  
+- HTML5  
 
-Every response is in `JSON` format and has a `"status"` key with a boolean value.
+### Backend
+- Python 3  
+- FastAPI  
 
-When the value is `True`, the action succeeded,
+### Tools
+- Git & GitHub for version control  
+- Vercel for frontend deployment  
+- RESTful APIs for backend services  
 
-  and additional data may be passed by response
+---
 
-  (check the DATA ON SUCCESS column for details).
+## 📸 Screenshots
 
-When the value is `False`, the required action failed,
+### Landing Page
+**Dark Mode**  
+![Landing Dark](https://github.com/Gabrli/Taskify/assets/110058841/030b5434-2656-4214-8fdc-e40a8c4c2e90)
 
-  and the response will contain `"err_msg"` with
+**Light Mode**  
+![Landing Light](https://github.com/Gabrli/Taskify/assets/110058841/fe667f16-3698-4486-a772-eb673f67c4d8)
 
-  an error message in a displayable form.
+### Dashboard
+**Dark Mode**  
+![Dashboard Dark](https://github.com/Gabrli/Taskify/assets/110058841/5dcce7b0-5bd4-42d8-a649-566996649ad3)
 
-**All endpoints are POST methods**
+**With Notifications**  
+![Dashboard Notif](https://github.com/Gabrli/Taskify/assets/110058841/9f81a1d5-6ec0-42a6-b923-6ea9d2d46fed)
 
-(except `/accounts/getAllNames` which is **GET**)
+---
 
-| **ENDPOINT**               | **INPUT DATA**                                                                 | **DATA ON SUCCESS**                                                                                 |
-| -------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| `/accounts/login`          | `username`, `password`                                                         | uid: `str`                                                                                          |
-| `/accounts/register`       | `username`, `password`, `email`                                                | uid: `str`                                                                                          |
-| `/accounts/delete`         | `uid`                                                                          | -                                                                                                   |
-| `/accounts/changePassword` | `uid`, `new`                                                                   | -                                                                                                   |
-| `/accounts/getAllNames`    |                                                                                | names: `List[string]`                                                                               |
-| `/tasks/create`            | `uid`, `name`, `description`, `date_start`, `date_end`, `Optional: folder_key` | task_id: `str`                                                                                      |
-| `/tasks/edit`              | `uid`, `task_id` `name`, `description`, `date_start`, `date_end`               | -                                                                                                   |
-| `/tasks/remove`            | `uid`, `task_id`                                                               | -                                                                                                   |
-| `/tasks/getAll`            | `uid`                                                                          | tasks: `List[object]`<br/>[{`name`, `description`, `date_start`, `date_end`, `task_id`}, {...},...] |
-| `/tasks/getTask`           | `uid`, `task_id`                                                               | task: `object`<br/>{`name`, `description`, `date_start`, `date_end`, `task_id`}                     |
-| `/folders/create`          | `uid`, `name`, `color`                                                         | folder_key: `str`                                                                                   |
-| `/folders/get_folder`      | `uid`, `folder_key`                                                            | folder: `object`<br/>{`author: str`, `name: str`, `color: str`, `task_ids: List[str]`}              |
-| `/folders/update`          | `uid`, `folder_key`, `new_name`, `new_color`                                   | -                                                                                                   |
-| `/folders/remove`          | `uid`, `folder_key`                                                            | -                                                                                                   |
-| `/folders/add_task`        | `uid`, `folder_key`, `task_id`                                                 | -                                                                                                   |
-| `/folders/remove_task`     | `uid`, `folder_key`, `task_id`                                                 | -                                                                                                   |
+## 📡 API Reference
 
-##### Run server:
+All responses are in JSON format and follow a standard structure.
 
-1. Make sure You have `Python` and `pip` installed.
+### Auth Endpoints
 
-2. Install all requirements: `pip3 install -r requirements.txt` 
+| Endpoint               | Method | Input                            | Success Response             |
+|------------------------|--------|----------------------------------|------------------------------|
+| `/accounts/login`      | POST   | `username`, `password`           | `uid`                        |
+| `/accounts/register`   | POST   | `username`, `password`, `email`  | `uid`                        |
+| `/accounts/delete`     | POST   | `uid`                            | —                            |
+| `/accounts/changePassword` | POST | `uid`, `new`                 | —                            |
+| `/accounts/getAllNames`| GET    | —                                | `names: List[string]`        |
 
-3. Run API locally:
-   
-   `python3 -m uvicorn api:api`
+### Task Endpoints
 
-4. Deploy API:
-   
-   `python3 -m uvicorn api:api --host 0.0.0.0 --port YOUR_PORT`
+| Endpoint           | Method | Input                                                   | Success Response              |
+|--------------------|--------|----------------------------------------------------------|-------------------------------|
+| `/tasks/create`    | POST   | `uid`, `name`, `description`, `date_start`, `date_end`, `folder_key?` | `task_id`         |
+| `/tasks/edit`      | POST   | `uid`, `task_id`, `name`, `description`, `date_start`, `date_end`    | —                 |
+| `/tasks/remove`    | POST   | `uid`, `task_id`                                        | —                               |
+| `/tasks/getAll`    | POST   | `uid`                                                   | List of tasks                 |
+| `/tasks/getTask`   | POST   | `uid`, `task_id`                                        | Task object                   |
+
+### Folder Endpoints
+
+| Endpoint              | Method | Input                              | Success Response              |
+|-----------------------|--------|-------------------------------------|-------------------------------|
+| `/folders/create`     | POST   | `uid`, `name`, `color`              | `folder_key`                  |
+| `/folders/get_folder` | POST   | `uid`, `folder_key`                 | Folder object                 |
+| `/folders/update`     | POST   | `uid`, `folder_key`, `new_name`, `new_color` | —                    |
+| `/folders/remove`     | POST   | `uid`, `folder_key`                 | —                             |
+| `/folders/add_task`   | POST   | `uid`, `folder_key`, `task_id`      | —                             |
+| `/folders/remove_task`| POST   | `uid`, `folder_key`, `task_id`      | —                             |
+
+---
+
+## 🧪 Running Locally
+
+### Backend Setup
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+````
+
+2. Start the API server:
+
+   ```bash
+   python3 -m uvicorn api:api
+   ```
+
+3. For custom host and port:
+
+   ```bash
+   python3 -m uvicorn api:api --host 0.0.0.0 --port 8000
+   ```
+
+---
+
+## 📁 Folder Structure
+
+```
+TaskifyApp/
+├── frontend/     # React + Vite client
+├── backend/      # FastAPI server
+├── api.py        # Main API file
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🧠 Learnings
+
+Through this project, I gained experience in:
+
+* Full-stack development workflows
+* Building and consuming RESTful APIs
+* Visualizing data dynamically
+* Working with FastAPI and React together
+
+---
+
+## 🚀 Deployment
+
+* Frontend: [Vercel](https://vercel.com)
+* Backend: Compatible with Railway, Render, or local hosting
+
+---
+
