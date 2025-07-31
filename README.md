@@ -4,7 +4,6 @@
 
 Taskify is a sleek and simple task management web application that helps users create, update, and organize their to-dos. Built using **React**, **JavaScript**, and **CSS**, the app is focused on clean UI and smooth functionality — perfect for learning component-based frontend development.
 
-> ⚡ Personal learning project to practice React, state management, and component design.
 
 ---
 
